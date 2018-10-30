@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                sh 'export $MAVEN_HOME=/usr/local/maven/'
+                sh 'export MAVEN_HOME=/usr/local/maven/'
                 sh 'export PATH=$PATH:$MAVEN_HOME/bin'
             }
         }
