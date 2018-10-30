@@ -1,0 +1,26 @@
+server:
+  port: 7091
+
+management:
+  server:
+    port: 7092
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: '/manage'
+    jmx:
+      enabled: false
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: false
+    conditions:
+      enabled: false
+    jolokia:
+      enabled: true
+      config:
+        debug: true

@@ -1,0 +1,21 @@
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: monitor-client-bak
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8000/eureka/

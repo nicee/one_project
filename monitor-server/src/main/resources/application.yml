@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+info:
+  own: jianli.xiao
+  version: @project.version@
+
+spring:
+  application:
+    name: monitor-server
+  boot:
+    admin:
+      context-path: '/'
+      monitor:
+        period: 10000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+      health:
+        show-details: ALWAYS
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
