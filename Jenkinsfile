@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '/usr/local/maven/bin/mvn -B -DskipTests clean package'
+                sh 'cd parent'
+                sh '/usr/local/maven/bin/mvn -B -e -DskipTests clean install'
             }
         }
         stage('Test') {

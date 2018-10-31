@@ -3,7 +3,7 @@ server:
 
 info:
   own: jianli.xiao
-  version: @project.version@
+  version: 1.0.0-SNAPSHOT
 
 spring:
   application:
