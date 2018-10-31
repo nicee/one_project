@@ -11,6 +11,10 @@
 
     <artifactId>monitor-eureka</artifactId>
 
+    <properties>
+        <main-class>MonitorEurekaApplication</main-class>
+    </properties>
+
     <dependencies>
 
         <dependency>

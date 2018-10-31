@@ -12,6 +12,10 @@
 
     <artifactId>monitor-server</artifactId>
 
+    <properties>
+        <main-class>BootAdminServerApplication</main-class>
+    </properties>
+
     <dependencies>
 
         <dependency>
