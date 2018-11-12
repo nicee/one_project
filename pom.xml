@@ -90,6 +90,7 @@
         <module>monitor-client</module>
         <module>monitor-client-bak</module>
         <module>monitor-eureka</module>
+        <module>rmq-provider</module>
     </modules>
 
 </project>
